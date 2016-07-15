@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F300615186E3B8F00405D34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F300614186E3B8F00405D34 /* Images.xcassets */; };
+		214546E41D1AF20B00EC4818 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 214546E31D1AF20B00EC4818 /* libz.tbd */; };
+		214547231D1B45B700EC4818 /* Scanner-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F03CB7C1862832600518C22 /* Scanner-Info.plist */; };
+		214547241D1B45C100EC4818 /* Scanner-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03CB7D1862832600518C22 /* Scanner-Prefix.swift */; };
+		214547251D1B45C400EC4818 /* CalibrationOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8BE65E199EED0C00E10C10 /* CalibrationOverlay.swift */; };
+		214547261D1B45C800EC4818 /* EAGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03CB5E1862832600518C22 /* EAGLView.swift */; };
+		214547271D1B45CB00EC4818 /* ViewpointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A93E232185133880049CEBE /* ViewpointController.swift */; };
+		214547281D1B45CE00EC4818 /* CustomShaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4DE5AB199BB90400F69F56 /* CustomShaders.swift */; };
+		214547291D1B45D000EC4818 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0BA2D2184ECE0C008FBE2E /* MeshRenderer.swift */; };
+		2145472A1D1B45D300EC4818 /* MeshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB955C2184E573A003DA089 /* MeshViewController.swift */; };
+		2145472B1D1B45D700EC4818 /* ViewController+OpenGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1557BB1A37D198007C485A /* ViewController+OpenGL.swift */; };
+		2145472C1D1B45D900EC4818 /* ViewController+SLAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF461E1A127B4900CAF953 /* ViewController+SLAM.swift */; };
+		2145472D1D1B45DC00EC4818 /* ViewController+Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF461D1A1279A900CAF953 /* ViewController+Sensor.swift */; };
+		2145472E1D1B45DF00EC4818 /* ViewController+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF46211A1288B600CAF953 /* ViewController+Camera.swift */; };
+		2145472F1D1B45E100EC4818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1295AB184370FE00E8C685 /* ViewController.swift */; };
+		214547301D1B45E400EC4818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1295A5184370FE00E8C685 /* AppDelegate.swift */; };
+		214547311D1B45E700EC4818 /* CustomUIKitStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD26B4198C07F600638C9C /* CustomUIKitStyles.swift */; };
+		21B7B1C21D1C2E5400C643FD /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214547211D1B194900EC4818 /* Structure.framework */; };
+		2A0BA3E418500398008FBE2E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0BA3E318500398008FBE2E /* CoreImage.framework */; };
+		2A3F2BB01857FB1600EE7A96 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3F2BAF1857FB1600EE7A96 /* MessageUI.framework */; };
+		2A5AA3841771397A0092391A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AA3831771397A0092391A /* OpenGLES.framework */; };
+		2AB8B9C717EA78280097C231 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB8B9C617EA78280097C231 /* AVFoundation.framework */; };
+		2AB8B9CB17EA786F0097C231 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB8B9CA17EA786F0097C231 /* CoreVideo.framework */; };
+		2AB8B9CD17EA78860097C231 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB8B9CC17EA78860097C231 /* CoreMedia.framework */; };
+		2AB955C4184E573A003DA089 /* MeshView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB955C1184E573A003DA089 /* MeshView_iPad.xib */; };
+		2AE1BE0E199AE998001C02E9 /* MeshView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AE1BE0D199AE998001C02E9 /* MeshView_iPhone.xib */; };
+		2AF77B8B17F2575500A99E20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF77B8A17F2575500A99E20 /* CoreGraphics.framework */; };
+		2AFC8D78176F966000F7F3B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFC8D77176F966000F7F3B5 /* UIKit.framework */; };
+		2AFC8D7A176F966000F7F3B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFC8D79176F966000F7F3B5 /* Foundation.framework */; };
+		2AFC8D7E176F966000F7F3B5 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFC8D7D176F966000F7F3B5 /* GLKit.framework */; };
+		2AFC8E19176FD4D600F7F3B5 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFC8E18176FD4D600F7F3B5 /* ExternalAccessory.framework */; };
+		2D23E7CD1A37B77D006E1F98 /* startScanButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D23E7CC1A37B77D006E1F98 /* startScanButton@2x.png */; };
+		2D23E7CF1A37B785006E1F98 /* doneButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D23E7CE1A37B785006E1F98 /* doneButton@2x.png */; };
+		2D23E7D11A37B78E006E1F98 /* resetScanButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D23E7D01A37B78E006E1F98 /* resetScanButton@2x.png */; };
+		2D74AC2E18461A83009F7B5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB8B9C817EA78590097C231 /* QuartzCore.framework */; };
+		2DC7D69718438E1D005BEE8B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D69518438E1D005BEE8B /* ImageIO.framework */; };
+		2DC7D69818438E1D005BEE8B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D69618438E1D005BEE8B /* CoreMotion.framework */; };
+		2DC7D69A18438E42005BEE8B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D69918438E42005BEE8B /* Accelerate.framework */; };
+		435307C71872825B00B04481 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 435307C31872825B00B04481 /* Default-568h@2x.png */; };
+		435307C81872825B00B04481 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 435307C41872825B00B04481 /* Default-Landscape@2x~ipad.png */; };
+		435307C91872825B00B04481 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 435307C51872825B00B04481 /* Default@2x.png */; };
+		435307CA1872825B00B04481 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 435307C61872825B00B04481 /* Default-Landscape~ipad.png */; };
+		438C049C18723EB10062E958 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438C049818723EB10062E958 /* ViewController_iPad.xib */; };
+		438C049D18723EB10062E958 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438C049A18723EB10062E958 /* ViewController_iPhone.xib */; };
+		43BB38C9199D2A51009D7AB2 /* calibration.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BB38C8199D2A51009D7AB2 /* calibration.png */; };
+		6F03CB911862832600518C22 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F03CB731862832600518C22 /* Splash.png */; };
+		6F7803CB186285E10005E6CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F03CB571862823000518C22 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F300614186E3B8F00405D34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		214546E31D1AF20B00EC4818 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		214547211D1B194900EC4818 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Structure.framework; path = Scanner/Structure.framework; sourceTree = "<group>"; };
+		21B7B1C31D1C3EB000C643FD /* Scanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A0BA2D2184ECE0C008FBE2E /* MeshRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshRenderer.swift; sourceTree = "<group>"; };
+		2A0BA3E318500398008FBE2E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		2A1557BB1A37D198007C485A /* ViewController+OpenGL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+OpenGL.swift"; sourceTree = "<group>"; };
+		2A3F2BAF1857FB1600EE7A96 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2A5AA3831771397A0092391A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2A93E232185133880049CEBE /* ViewpointController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewpointController.swift; sourceTree = "<group>"; };
+		2AB8B9C617EA78280097C231 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2AB8B9C817EA78590097C231 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2AB8B9CA17EA786F0097C231 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2AB8B9CC17EA78860097C231 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2AB955C1184E573A003DA089 /* MeshView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeshView_iPad.xib; sourceTree = "<group>"; };
+		2AB955C2184E573A003DA089 /* MeshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshViewController.swift; sourceTree = "<group>"; };
+		2AE1BE0D199AE998001C02E9 /* MeshView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeshView_iPhone.xib; sourceTree = "<group>"; };
+		2AEF461D1A1279A900CAF953 /* ViewController+Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Sensor.swift"; sourceTree = "<group>"; };
+		2AEF461E1A127B4900CAF953 /* ViewController+SLAM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SLAM.swift"; sourceTree = "<group>"; };
+		2AEF46211A1288B600CAF953 /* ViewController+Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Camera.swift"; sourceTree = "<group>"; };
+		2AF77B8A17F2575500A99E20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2AFC8D74176F966000F7F3B5 /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AFC8D77176F966000F7F3B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2AFC8D79176F966000F7F3B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2AFC8D7D176F966000F7F3B5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2AFC8E18176FD4D600F7F3B5 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		2D1295A5184370FE00E8C685 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D1295AB184370FE00E8C685 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D23E7CC1A37B77D006E1F98 /* startScanButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startScanButton@2x.png"; sourceTree = "<group>"; };
+		2D23E7CE1A37B785006E1F98 /* doneButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doneButton@2x.png"; sourceTree = "<group>"; };
+		2D23E7D01A37B78E006E1F98 /* resetScanButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resetScanButton@2x.png"; sourceTree = "<group>"; };
+		2D4DE5AB199BB90400F69F56 /* CustomShaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShaders.swift; sourceTree = "<group>"; };
+		2DC7D69518438E1D005BEE8B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2DC7D69618438E1D005BEE8B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		2DC7D69918438E42005BEE8B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		435307C31872825B00B04481 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		435307C41872825B00B04481 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		435307C51872825B00B04481 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		435307C61872825B00B04481 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		438C049918723EB10062E958 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		438C049B18723EB10062E958 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		43BB38C8199D2A51009D7AB2 /* calibration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration.png; sourceTree = "<group>"; };
+		6F03CB581862823000518C22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		6F03CB5E1862832600518C22 /* EAGLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EAGLView.swift; sourceTree = "<group>"; };
+		6F03CB731862832600518C22 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
+		6F03CB7C1862832600518C22 /* Scanner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Scanner-Info.plist"; sourceTree = "<group>"; };
+		6F03CB7D1862832600518C22 /* Scanner-Prefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scanner-Prefix.swift"; sourceTree = "<group>"; };
+		6F8BE65E199EED0C00E10C10 /* CalibrationOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalibrationOverlay.swift; sourceTree = "<group>"; };
+		7EAD26B4198C07F600638C9C /* CustomUIKitStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIKitStyles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AFC8D71176F966000F7F3B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214546E41D1AF20B00EC4818 /* libz.tbd in Frameworks */,
+				2A3F2BB01857FB1600EE7A96 /* MessageUI.framework in Frameworks */,
+				2A0BA3E418500398008FBE2E /* CoreImage.framework in Frameworks */,
+				2D74AC2E18461A83009F7B5B /* QuartzCore.framework in Frameworks */,
+				21B7B1C21D1C2E5400C643FD /* Structure.framework in Frameworks */,
+				2DC7D69A18438E42005BEE8B /* Accelerate.framework in Frameworks */,
+				2AF77B8B17F2575500A99E20 /* CoreGraphics.framework in Frameworks */,
+				2AB8B9CD17EA78860097C231 /* CoreMedia.framework in Frameworks */,
+				2AB8B9CB17EA786F0097C231 /* CoreVideo.framework in Frameworks */,
+				2AB8B9C717EA78280097C231 /* AVFoundation.framework in Frameworks */,
+				2A5AA3841771397A0092391A /* OpenGLES.framework in Frameworks */,
+				2AFC8E19176FD4D600F7F3B5 /* ExternalAccessory.framework in Frameworks */,
+				2AFC8D78176F966000F7F3B5 /* UIKit.framework in Frameworks */,
+				2AFC8D7A176F966000F7F3B5 /* Foundation.framework in Frameworks */,
+				2AFC8D7E176F966000F7F3B5 /* GLKit.framework in Frameworks */,
+				2DC7D69718438E1D005BEE8B /* ImageIO.framework in Frameworks */,
+				2DC7D69818438E1D005BEE8B /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AFC8D6B176F966000F7F3B5 = {
+			isa = PBXGroup;
+			children = (
+				2AFC8D81176F966000F7F3B5 /* Scanner */,
+				2AFC8D76176F966000F7F3B5 /* Frameworks */,
+				2AFC8D75176F966000F7F3B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AFC8D75176F966000F7F3B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC8D74176F966000F7F3B5 /* Scanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AFC8D76176F966000F7F3B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				214547211D1B194900EC4818 /* Structure.framework */,
+				214546E31D1AF20B00EC4818 /* libz.tbd */,
+				2A3F2BAF1857FB1600EE7A96 /* MessageUI.framework */,
+				2A0BA3E318500398008FBE2E /* CoreImage.framework */,
+				2DC7D69918438E42005BEE8B /* Accelerate.framework */,
+				2DC7D69518438E1D005BEE8B /* ImageIO.framework */,
+				2DC7D69618438E1D005BEE8B /* CoreMotion.framework */,
+				2AF77B8A17F2575500A99E20 /* CoreGraphics.framework */,
+				2AB8B9CC17EA78860097C231 /* CoreMedia.framework */,
+				2AB8B9CA17EA786F0097C231 /* CoreVideo.framework */,
+				2AB8B9C817EA78590097C231 /* QuartzCore.framework */,
+				2AB8B9C617EA78280097C231 /* AVFoundation.framework */,
+				2AFC8D79176F966000F7F3B5 /* Foundation.framework */,
+				2AFC8D77176F966000F7F3B5 /* UIKit.framework */,
+				2AFC8E18176FD4D600F7F3B5 /* ExternalAccessory.framework */,
+				2AFC8D7D176F966000F7F3B5 /* GLKit.framework */,
+				2A5AA3831771397A0092391A /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AFC8D81176F966000F7F3B5 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				7EAD26B4198C07F600638C9C /* CustomUIKitStyles.swift */,
+				2D1295A5184370FE00E8C685 /* AppDelegate.swift */,
+				2D1295AB184370FE00E8C685 /* ViewController.swift */,
+				2AEF46211A1288B600CAF953 /* ViewController+Camera.swift */,
+				2AEF461D1A1279A900CAF953 /* ViewController+Sensor.swift */,
+				2AEF461E1A127B4900CAF953 /* ViewController+SLAM.swift */,
+				2A1557BB1A37D198007C485A /* ViewController+OpenGL.swift */,
+				2AB955C2184E573A003DA089 /* MeshViewController.swift */,
+				2A0BA2D2184ECE0C008FBE2E /* MeshRenderer.swift */,
+				2D4DE5AB199BB90400F69F56 /* CustomShaders.swift */,
+				2A93E232185133880049CEBE /* ViewpointController.swift */,
+				6F03CB5E1862832600518C22 /* EAGLView.swift */,
+				6F8BE65E199EED0C00E10C10 /* CalibrationOverlay.swift */,
+				1F300614186E3B8F00405D34 /* Images.xcassets */,
+				433C3B9D186CBEA900552A10 /* Supporting Files */,
+				21B7B1C31D1C3EB000C643FD /* Scanner-Bridging-Header.h */,
+			);
+			path = Scanner;
+			sourceTree = SOURCE_ROOT;
+		};
+		433C3B9D186CBEA900552A10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F03CB601862832600518C22 /* Graphics */,
+				2AB955C1184E573A003DA089 /* MeshView_iPad.xib */,
+				2AE1BE0D199AE998001C02E9 /* MeshView_iPhone.xib */,
+				438C049818723EB10062E958 /* ViewController_iPad.xib */,
+				438C049A18723EB10062E958 /* ViewController_iPhone.xib */,
+				6F03CB7C1862832600518C22 /* Scanner-Info.plist */,
+				6F03CB571862823000518C22 /* InfoPlist.strings */,
+				6F03CB7D1862832600518C22 /* Scanner-Prefix.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F03CB601862832600518C22 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				43BB38C8199D2A51009D7AB2 /* calibration.png */,
+				435307C31872825B00B04481 /* Default-568h@2x.png */,
+				435307C41872825B00B04481 /* Default-Landscape@2x~ipad.png */,
+				435307C51872825B00B04481 /* Default@2x.png */,
+				435307C61872825B00B04481 /* Default-Landscape~ipad.png */,
+				2D23E7CE1A37B785006E1F98 /* doneButton@2x.png */,
+				2D23E7D01A37B78E006E1F98 /* resetScanButton@2x.png */,
+				6F03CB731862832600518C22 /* Splash.png */,
+				2D23E7CC1A37B77D006E1F98 /* startScanButton@2x.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AFC8D73176F966000F7F3B5 /* Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AFC8DA2176F966000F7F3B5 /* Build configuration list for PBXNativeTarget "Scanner" */;
+			buildPhases = (
+				2AFC8D70176F966000F7F3B5 /* Sources */,
+				2AFC8D71176F966000F7F3B5 /* Frameworks */,
+				2AFC8D72176F966000F7F3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scanner;
+			productName = GLViewer;
+			productReference = 2AFC8D74176F966000F7F3B5 /* Scanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AFC8D6C176F966000F7F3B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Occipital;
+				TargetAttributes = {
+					2AFC8D73176F966000F7F3B5 = {
+						DevelopmentTeam = ZBU4S89UU7;
+					};
+				};
+			};
+			buildConfigurationList = 2AFC8D6F176F966000F7F3B5 /* Build configuration list for PBXProject "Scanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				global,
+			);
+			mainGroup = 2AFC8D6B176F966000F7F3B5;
+			productRefGroup = 2AFC8D75176F966000F7F3B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AFC8D73176F966000F7F3B5 /* Scanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AFC8D72176F966000F7F3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7803CB186285E10005E6CD /* InfoPlist.strings in Resources */,
+				43BB38C9199D2A51009D7AB2 /* calibration.png in Resources */,
+				435307CA1872825B00B04481 /* Default-Landscape~ipad.png in Resources */,
+				435307C81872825B00B04481 /* Default-Landscape@2x~ipad.png in Resources */,
+				1F300615186E3B8F00405D34 /* Images.xcassets in Resources */,
+				2AB955C4184E573A003DA089 /* MeshView_iPad.xib in Resources */,
+				2D23E7CF1A37B785006E1F98 /* doneButton@2x.png in Resources */,
+				2D23E7D11A37B78E006E1F98 /* resetScanButton@2x.png in Resources */,
+				2AE1BE0E199AE998001C02E9 /* MeshView_iPhone.xib in Resources */,
+				2D23E7CD1A37B77D006E1F98 /* startScanButton@2x.png in Resources */,
+				438C049C18723EB10062E958 /* ViewController_iPad.xib in Resources */,
+				435307C91872825B00B04481 /* Default@2x.png in Resources */,
+				6F03CB911862832600518C22 /* Splash.png in Resources */,
+				435307C71872825B00B04481 /* Default-568h@2x.png in Resources */,
+				438C049D18723EB10062E958 /* ViewController_iPhone.xib in Resources */,
+				214547231D1B45B700EC4818 /* Scanner-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AFC8D70176F966000F7F3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2145472E1D1B45DF00EC4818 /* ViewController+Camera.swift in Sources */,
+				214547311D1B45E700EC4818 /* CustomUIKitStyles.swift in Sources */,
+				2145472A1D1B45D300EC4818 /* MeshViewController.swift in Sources */,
+				214547241D1B45C100EC4818 /* Scanner-Prefix.swift in Sources */,
+				214547291D1B45D000EC4818 /* MeshRenderer.swift in Sources */,
+				214547271D1B45CB00EC4818 /* ViewpointController.swift in Sources */,
+				214547281D1B45CE00EC4818 /* CustomShaders.swift in Sources */,
+				2145472F1D1B45E100EC4818 /* ViewController.swift in Sources */,
+				2145472C1D1B45D900EC4818 /* ViewController+SLAM.swift in Sources */,
+				214547301D1B45E400EC4818 /* AppDelegate.swift in Sources */,
+				2145472B1D1B45D700EC4818 /* ViewController+OpenGL.swift in Sources */,
+				214547251D1B45C400EC4818 /* CalibrationOverlay.swift in Sources */,
+				2145472D1D1B45DC00EC4818 /* ViewController+Sensor.swift in Sources */,
+				214547261D1B45C800EC4818 /* EAGLView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		438C049818723EB10062E958 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438C049918723EB10062E958 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		438C049A18723EB10062E958 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438C049B18723EB10062E958 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		6F03CB571862823000518C22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F03CB581862823000518C22 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AFC8DA1176F966000F7F3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AFC8DA4176F966000F7F3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Scanner",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/Scanner/Structure.framework/Headers\"",
+				);
+				INFOPLIST_FILE = "Scanner/Scanner-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = sourcemonkeys.sample.Scanner;
+				PRODUCT_NAME = Scanner;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Scanner/Scanner-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		7E6F73541A7826BD008BA18E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E6F73551A7826BD008BA18E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Scanner",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/Scanner/Structure.framework/Headers\"",
+				);
+				INFOPLIST_FILE = "Scanner/Scanner-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = sourcemonkeys.sample.Scanner;
+				PRODUCT_NAME = Scanner;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Scanner/Scanner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AFC8D6F176F966000F7F3B5 /* Build configuration list for PBXProject "Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6F73541A7826BD008BA18E /* Debug */,
+				2AFC8DA1176F966000F7F3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AFC8DA2176F966000F7F3B5 /* Build configuration list for PBXNativeTarget "Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6F73551A7826BD008BA18E /* Debug */,
+				2AFC8DA4176F966000F7F3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AFC8D6C176F966000F7F3B5 /* Project object */;
+}
